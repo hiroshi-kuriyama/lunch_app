@@ -12,6 +12,8 @@ def index():
     test_str = 'aiueo'
     return render_template('index.html', img_path_0=img_path_0, test_str=img_file_names)
 
+  
+
 
 if __name__ == '__main__':
     app.debug = True
