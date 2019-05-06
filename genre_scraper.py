@@ -16,7 +16,7 @@ for e in elems:
 genre_link_dict = dict(zip(genres, links))
 with open('./static/genres_data/tokyo_genres.json', mode='w') as f:
     json.dump(genre_link_dict, f)
-    
+
 def extarct_genre_links(url):
     resp = requests.get(url)
     soup = BeautifulSoup(resp.text, 'html.parser')
